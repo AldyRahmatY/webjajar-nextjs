@@ -83,15 +83,15 @@ const initialNodes = [
   },
   {
     id: '12',
-    position: { x: 479, y: 200 }, // X di tengah kades, Y di antara baris 1 dan 2
-    data: { label: '' },
-    style: { width: 0, height: 0, padding: 0, opacity: 0 }, // Benar-benar tidak terlihat
+    type: 'invisible',
+    position: { x: 478, y: 200 }, // X di tengah kades, Y di antara baris 1 dan 2
+    data: { name: '-', role: '-'},
   },
   {
     id: '13',
-    position: { x: 479, y: 270 }, // X di tengah kades, Y di antara baris 1 dan 2
-    data: { label: '' },
-    style: { width: 0, height: 0, padding: 0, opacity: 0 }, // Benar-benar tidak terlihat
+    type: 'invisible',
+    position: { x: 478, y: 270 }, // X di tengah kades, Y di antara baris 1 dan 2
+    data: { name: '-', role: '-'},
   },
 ];
 
@@ -130,7 +130,20 @@ const CustomNode = ({ data }: any) => {
   );
 };
 
-const nodeTypes = { custom: CustomNode };
+const InvisibleNode = ({ data }: any) => {
+  return (
+    <div className="w-1 h-1 relative">
+      {/* Handle tetap harus ada agar garis bisa nyambung, tapi kita buat transparan */}
+      <Handle type="target" position={Position.Top} style={{ background: 'transparent', border: 'none' }} />
+      <Handle type="source" position={Position.Bottom} style={{ background: 'transparent', border: 'none' }} />
+    </div>
+  );
+};
+
+const nodeTypes = { 
+  custom: CustomNode,
+  invisible: InvisibleNode
+};
 
 // ----- KOMPONEN UTAMA ORG CHART -----
 export default function OrgChart() {

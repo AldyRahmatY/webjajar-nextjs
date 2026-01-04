@@ -14,6 +14,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  transpilePackages: ['reactflow'],
 };
 
 export default nextConfig;

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: 'Jajar Gumregah',
   description: 'Website Desa Wisata Jajar Gumregah',
   icons: {
-    icon: '/assets/img/iconlogo.png', 
+    icon: 'public/assets/img/iconlogo.png', 
   },
 }
 

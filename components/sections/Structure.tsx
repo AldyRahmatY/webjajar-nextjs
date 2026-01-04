@@ -1,6 +1,16 @@
 'use client'
 import ScrollReveal from '@/components/ui/ScrollReveal'
-import OrgChart from '@/components/OrgChart'
+// import OrgChart from '@/components/OrgChart'
+// GANTI dengan Dynamic Import ini:
+import dynamic from 'next/dynamic';
+
+const OrgChart = dynamic(
+  () => import('@/components/OrgChart'), // Sesuaikan path folder Anda
+  { 
+    ssr: false, // <--- INI KUNCINYA. Mematikan render server.
+    loading: () => <p>Memuat Struktur Organisasi...</p> // Tampilan saat loading
+  }
+);
 
 export default function StructureSection() {
   return (
