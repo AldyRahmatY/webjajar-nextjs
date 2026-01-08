@@ -6,8 +6,10 @@ import Image from 'next/image'
 import { Facebook, Youtube, Instagram, Phone, Mail, Users, Activity, Calendar } from 'lucide-react'
 import { db } from '@/lib/firebase'
 import { doc, onSnapshot, getDoc } from 'firebase/firestore'
+import { useTranslations } from 'next-intl'
 
 export default function Footer() {
+  const t = useTranslations('footer')
   const [stats, setStats] = useState({
     today: 0,
     yesterday: 0,
@@ -73,7 +75,7 @@ useEffect(() => {
 
           {/* Kolom 3: Social Media */}
           <div>
-            <h6 className="font-bold text-lg mb-4">Media Sosial Kami</h6>
+            <h6 className="font-bold text-lg mb-4">{t('sosmed')}</h6>
             <div className="flex gap-4">
               <a href="https://web.facebook.com/kantor.membangun.3" target="_blank" className="hover:text-emerald-500 transition-colors">
                 <Facebook size={24} />
@@ -89,7 +91,7 @@ useEffect(() => {
 
           {/* Kolom 4: Kontak */}
           <div>
-            <h6 className="font-bold text-lg mb-4">Kontak Kami</h6>
+            <h6 className="font-bold text-lg mb-4">{t('kontak')}</h6>
             <div className="flex items-center gap-3 mb-3 text-gray-400">
               <Phone size={20} />
               <span>0822-3231-3546 - Rifqi</span>
@@ -108,7 +110,7 @@ useEffect(() => {
             <div className="flex items-center gap-3 bg-[#333] p-4 rounded-2xl border border-gray-700">
               <Activity className="text-emerald-500" size={20} />
               <div>
-                <p className="text-[10px] uppercase text-gray-400 font-bold">Hari Ini</p>
+                <p className="text-[10px] text-gray-400 font-bold">{t('sekarang')}</p>
                 <p className="text-lg font-bold">{stats.today.toLocaleString()}</p>
               </div>
             </div>
@@ -116,7 +118,7 @@ useEffect(() => {
             <div className="flex items-center gap-3 bg-[#333] p-4 rounded-2xl border border-gray-700">
               <Calendar className="text-blue-500" size={20} />
               <div>
-                <p className="text-[10px] uppercase text-gray-400 font-bold">Kemarin</p>
+                <p className="text-[10px] text-gray-400 font-bold">{t('kemarin')}</p>
                 <p className="text-lg font-bold">{stats.yesterday.toLocaleString()}</p>
               </div>
             </div>
@@ -124,7 +126,7 @@ useEffect(() => {
             <div className="flex items-center gap-3 bg-[#333] p-4 rounded-2xl border border-gray-700">
               <Users className="text-orange-500" size={20} />
               <div>
-                <p className="text-[10px] uppercase text-gray-400 font-bold">Total Pengunjung</p>
+                <p className="text-[10px] text-gray-400 font-bold">{t('total')}</p>
                 <p className="text-lg font-bold">{stats.total.toLocaleString()}</p>
               </div>
             </div>

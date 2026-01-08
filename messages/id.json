@@ -1,0 +1,158 @@
+{
+  "TourismSection": {
+    "title": "Destinasi & Layanan",
+    "subtitle": "Temukan pengalaman terbaik di desa kami",
+    "filters": {
+      "all": "Semua",
+      "nature": "Alam",
+      "edu": "Edukasi",
+      "culture": "Budaya",
+      "culinary": "Kuliner",
+      "homestay": "Homestay"
+
+    },
+    "items": {
+      "1": {
+        "title": "Tebing Belik Bolu",
+        "about": "Area tebing karst yang secara topografi cocok untuk pemanjatan. Sering digunakan oleh pecinta alam lokal untuk latihan rock climbing"
+      },
+      "2": {
+        "title": "Air Terjun Telaga Jarum",
+        "about": "Tersembunyi di rimbunnya perkebunan. Suaranya yang menenangkan sangat cocok untuk meditasi atau self-healing"
+      },
+      "3": {
+        "title": "Bumi Perkemahan Umbulan Karang",
+        "about": "Kawasan sumber air yang dikelilingi pohon-pohon besar. Sangat populer untuk pre-wedding, kemah pramuka, atau acara komunitas"
+      },
+      "4": {
+        "title": "Ngonthel Keliling Desa",
+        "about": "Berkeliling Dusun Krajan, Kebon, dan Belik dengan sepeda sambil menikmati hamparan perbukitan hijau dan persawahan yang asri"
+      },
+      "5": {
+        "title": "Lanskap Perbukitan Dusun Belik",
+        "about": "Titik tertinggi untuk melihat pemandangan seluruh desa dan matahari terbenam (sunset) di atas hamparan sawah"
+      },
+      "21": {
+        "title": "Taman Jajar Gumregah",
+        "about": "Pusat desa, tempat pertunjukan seni terbuka yang luas dengan pemandangan tebing yang indah"
+      },
+      "6": {
+        "title": "Pande Besi",
+        "about": "Melihat proses penempaan besi menjadi alat pertanian atau senjata tajam dengan cara tradisional (menggunakan ububan)"
+      },
+      "7": {
+        "title": "Kerajinan Anyaman Simpai",
+        "about": "Wisatawan dapat belajar membuat berbagai kerajinan anyaman tradisional seperti bakul, tikar, dan topi dari simpai"
+      },
+      "8": {
+        "title": "Pembuatan Tempe Debog",
+        "about": "Mempelajari teknik fermentasi tempe yang unik karena tidak menggunakan plastik atau daun pisang biasa, melainkan pelepah pisang (debog)"
+      },
+      "9": {
+        "title": "Pahat Patung",
+        "about": "Wisatawan dapat melihat dan mempelajari mengenai seni pahat tradisional menggunakan alat-alat sederhana"
+      },
+      "11": {
+        "title": "Kesenian Tiban",
+        "about": "Pertandingan cambuk janur/lidi antar pria untuk memohon hujan. Wisatawan bisa belajar tentang filosofi di balik tradisi Tiban ini"
+      },
+      "12": {
+        "title": "Kesenian Jedoran Salalahuk",
+        "about": "Musik perkusi tradisional menggunakan terbang/rebana besar yang sangat ritmik dan magis"
+      },
+      "13": {
+        "title": "Karawitan & Tari",
+        "about": "Pelatihan langsung menabuh gamelan dan menari tarian lokal bagi wisatawan yang menginap"
+      },
+      "14": {
+        "title": "Upacara Bersih Desa",
+        "about": "Acara tahunan besar (biasanya pada bulan Longkang/Sela) yang melibatkan seluruh warga dengan kirab tumpeng hasil bumi"
+      },
+      "16": {
+        "title": "Cukdeh (Pincuk Lodeh)",
+        "about": "Sayur lodeh gurih pedas dengan wadah daun, biasanya dinikmati di pinggir sawah"
+      },
+      "17": {
+        "title": "Cimplung Ketela",
+        "about": "Camilan manis dari singkong yang direbus lama dalam nira kelapa panas saat proses pembuatan gula merah"
+      },
+      "18": {
+        "title": "Wedang Suwuk",
+        "about": "Minuman kuno dari kopi murni dan gula aren. Disebut suwuk karena proses menyeduhnya seperti orang yang mau nyuwuk (mengobati)"
+      },
+      "19": {
+        "title": "Sego Gegok",
+        "about": "Nasi bungkus daun pisang dengan sambal teri pedas yang dikukus, memberikan aroma yang sangat kuat khas Desa Jajar"
+      },
+      "20": {
+        "title": "Paseban Cafe",
+        "about": "Kafe modern dan tradisional dengan pemandangan sawah dan bukit yang menenangkan. Cocok untuk tempat healing sore hari"
+      },
+      "15": {
+        "title": "Homestay Tradisional",
+        "about": "Menginap di rumah warga dengan fasilitas lengkap sambil merasakan kehidupan sehari-hari masyarakat desa"
+      }
+    }
+  },
+
+  "Navbar": {
+    "home": "BERANDA",
+    "about": "TENTANG JAJAR",
+    "orgchart": "STRUKTUR DESA",
+    "service": "LAYANAN",
+    "berita": "BERITA",
+    "booking": "Pemesanan"
+
+  },
+
+    "HeroSection": {
+    "button": "Jelajahi Desa",
+    "slides": {
+      "0": {
+        "subtitle" : "Selamat Datang di Desa Jajar", 
+        "title": "Jajar Gumregah",
+        "desc": "Temukan pesona kehidupan pedesaan dan pengalaman budaya otentik di desa kami yang indah."
+      },
+      "1": {
+        "subtitle" : "Jelajahi Keindahan Alam",
+        "title": "Jajar Gumregah",
+        "desc": "Dari sawah yang rimbun hingga air terjun yang tenang, rasakan keindahan pemandangan Jajar yang memukau."
+      },
+      "2": {
+        "subtitle" : "Warisan Budaya Menanti Anda",
+        "title": "Jajar Gumregah",
+        "desc": "Rasakan seni tradisional, kerajinan, dan upacara yang menampilkan warisan budaya."
+      }
+    }
+  },
+
+  "AboutSection" : {
+    "section": "Tentang Kami",
+    "title": "Mengenal Desa Jajar Lebih Dekat",
+    "header": "Permata di Trenggalek",
+    "paragraf1" : "terletak di Kecamatan Gandusari, Kabupaten Trenggalek. Dikelilingi oleh hamparan perbukitan hijau dan persawahan yang asri, desa ini menjadi tempat yang ideal untuk wisatawan yang ingin merasakan ketenangan.",
+    "paragraf2": "Di bawah naungan perbukitan hijau Trenggalek, <strong>tradisi Tiban</strong>  menghidupkan legenda pemanggil hujan melalui atraksi cambuk yang menggetarkan sukma. Jelajahi Desa Wisata Jajar, tempat di mana kemurnian alam dan keagungan budaya leluhur menyatu dalam sebuah pelarian yang tak terlupakan.",
+    "luas": "Luas Wilayah",
+    "penduduk": "Penduduk Desa",
+    "dusun": "Dusun",
+    "rt": "Rukun Tetangga",
+    "video_profile": "Profil Video",
+    "click_to_play": "Klik untuk memutar video"
+  },
+    "structureSection": {
+    "section": "Struktur Desa",
+    "title": "Struktur Organisasi Desa Jajar"
+  },
+  "NewsSection": {
+    "title": "Berita Terbaru Jajar",
+    "subtitle": "Perkembangan terkini Seputar Desa Jajar"
+  },
+
+  "footer": {
+    "sosmed": "Sosial Media Kami",
+    "kontak": "Informasi Kontak",
+    "kemarin": "Pengunjung Kemarin",
+    "sekarang": "Pengunjung Hari Ini",
+    "total": "Total Pengunjung"
+  }
+}

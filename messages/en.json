@@ -1,0 +1,159 @@
+{
+  "TourismSection": {
+    "title": "Destinations & Services",
+    "subtitle": "Discover the best experiences in our village",
+    "filters": {
+      "all": "All",
+      "nature": "Nature",
+      "edu": "Education",
+      "culture": "Culture",
+      "culinary": "Culinary",
+      "homestay": "Homestay"
+
+    },
+    "items": {
+      "1": {
+        "title": "Belik Bolu Cliff",
+        "about": "A karst cliff area topographically suitable for climbing. Often used by local nature lovers for rock climbing practice."
+      },
+      "2": {
+        "title": "Telaga Jarum Waterfall",
+        "about": "Hidden in the lush plantation. Its soothing sound is perfect for meditation or self-healing."
+      },
+      "3": {
+        "title": "Umbulan Karang Camping Ground",
+        "about": "A water source area surrounded by large trees. Very popular for pre-wedding photos, scout camping, or community events."
+      },
+      "4": {
+        "title": "Village Cycling Tour",
+        "about": "Cycle around Krajan, Kebon, and Belik hamlets while enjoying the green hills and beautiful rice fields."
+      },
+      "5": {
+        "title": "Belik Hamlet Hill Landscape",
+        "about": "The highest point to see the view of the entire village and the sunset over the rice fields."
+      },
+      "21": {
+        "title": "Jajar Gumregah Park",
+        "about": "The village center, a spacious open-air art performance venue with beautiful cliff views."
+      },
+      "6": {
+        "title": "Traditional Blacksmith",
+        "about": "Watch the process of forging iron into farming tools or sharp weapons using traditional methods (using bellows)."
+      },
+      "7": {
+        "title": "Simpai Woven Crafts",
+        "about": "Tourists can learn to make various traditional woven crafts such as baskets, mats, and hats from simpai."
+      },
+      "8": {
+        "title": "Making Debog Tempeh",
+        "about": "Learn the unique tempeh fermentation technique that uses banana stems (debog) instead of plastic or banana leaves."
+      },
+      "9": {
+        "title": "Statue Carving",
+        "about": "Tourists can see and learn about traditional sculpture using simple tools."
+      },
+      "11": {
+        "title": "Tiban Tradition",
+        "about": "A whip fight ritual between men to summon rain. Tourists can learn about the philosophy behind this Tiban tradition."
+      },
+      "12": {
+        "title": "Jedoran Salalahuk",
+        "about": "Traditional percussion music using large tambourines/rebana which is very rhythmic and magical."
+      },
+      "13": {
+        "title": "Karawitan & Dance",
+        "about": "Direct training in playing gamelan and dancing local dances for tourists staying overnight."
+      },
+      "14": {
+        "title": "Bersih Desa Ceremony",
+        "about": "A major annual event involving all residents with a parade of agricultural produce tumpeng."
+      },
+      "16": {
+        "title": "Cukdeh (Pincuk Lodeh)",
+        "about": "Spicy savory vegetable stew served in leaf containers, usually enjoyed on the edge of the rice fields."
+      },
+      "17": {
+        "title": "Cassava Cimplung",
+        "about": "Sweet snack made from cassava boiled for a long time in hot coconut sap during the brown sugar making process."
+      },
+      "18": {
+        "title": "Wedang Suwuk",
+        "about": "Ancient drink made from pure coffee brewed with water and palm sugar. Called 'suwuk' because the brewing process is like a healing ritual."
+      },
+      "19": {
+        "title": "Sego Gegok",
+        "about": "Rice wrapped in banana leaves with spicy anchovy chili sauce, steamed to give a very strong aroma typical of Jajar Village."
+      },
+      "20": {
+        "title": "Paseban Cafe",
+        "about": "This cafe offers modern and traditional menus with calming views of rice fields and hills. Perfect for afternoon healing."
+      },
+      "15": {
+        "title": "Traditional Homestay",
+        "about": "Stay in residents' homes with complete facilities while experiencing the daily life of the village community."
+      }
+    }
+  },
+
+  "Navbar": {
+    "home": "HOME",
+    "about": "ABOUT JAJAR",
+    "orgchart": "VILLAGE STRUCTURE",
+    "service": "SERVICES",
+    "berita": "NEWS",
+    "booking": "Booking"
+  },
+
+    "HeroSection": {
+    "button": "Explore Village",
+    "slides": {
+      "0": {
+        "subtitle" : "Welcome to Jajar Village", 
+        "title": "Jajar Gumregah",
+        "desc": "Discover the charm of rural life and authentic cultural experiences in our picturesque village."
+      },
+      "1": {
+        "subtitle" : "Explore Beauty of Nature",
+        "title": "Jajar Gumregah",
+        "desc": "From lush rice fields to serene waterfalls, immerse yourself in the breathtaking landscapes of Jajar."
+      },
+      "2": {
+        "subtitle" : "Cultural Heritage Awaits",
+        "title": "Jajar Gumregah",
+        "desc": "Experience traditional arts, crafts, and ceremonies that showcase the rich heritage of our community."
+      }
+    }
+  },
+
+  "AboutSection" : {
+    "section": "About Village",
+    "title": "Getting to Know Jajar Village Closer",
+    "header": "Gems in Trenggalek",
+    "paragraf1" : "Located in Gandusari Subdistrict, Trenggalek Regency. Surrounded by green hills and beautiful rice fields, this village is an ideal place for tourists who want to experience tranquillity.",
+    "paragraf2": "Under the shade of Trenggalek's green hills, the <strong>Tiban tradition</strong> brings the legend of the rainmaker to life through a soul-stirring whip-cracking attraction. Explore Jajar Tourism Village, a place where the purity of nature and the majesty of ancestral culture come together in an unforgettable escape.",
+    "luas": "Village Area",
+    "penduduk": "Village Population",
+    "dusun": "Hamlet",
+    "rt": "Neighbourhood Association",
+    "video_profile": "Video Profile",
+    "click_to_play": "Click to play video"
+  },
+
+  "structureSection": {
+    "section": "Village Structure",
+    "title": "Organisational Structure of Jajar Village"
+  },
+
+    "NewsSection": {
+    "title": "Latest Jajar News",
+    "subtitle": "Stay updated with the latest happenings in Jajar Village"
+  },
+
+  "footer": {
+    "sosmed": "Our Social Media",
+    "kontak": "Contact Information",
+    "kemarin": "Yesterday Visitors",
+    "sekarang": "Today Visitors",
+    "total": "Total Visitors"
+  }
+}

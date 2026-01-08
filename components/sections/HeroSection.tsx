@@ -6,32 +6,35 @@ import { motion, AnimatePresence } from 'framer-motion' // Ubah ke 'motion/react
 import { Button } from '@/components/ui/button'
 import GradientText from '@/components/GradientText' // <--- 1. Import ini
 import ShinyText from '@/components/ShinyText'
+import { useTranslations } from 'next-intl'
+
 
 const slides = [
   {
-    id: 1,
+    id: 0,
     image: '/assets/img/banner1.jpg',
-    subtitle: 'Selamat Datang Di Website Desa',
-    title: 'Jajar Gumregah',
-    desc: 'Tempat di Mana Alam, Budaya, dan Kehangatan Penduduk Berpadu.',
+    // subtitle: 'Selamat Datang Di Website Desa',
+    // title: 'Jajar Gumregah',
+    // desc: 'Tempat di Mana Alam, Budaya, dan Kehangatan Penduduk Berpadu.',
+  },
+  {
+    id: 1,
+    image: '/assets/img/banner2.jpg',
+    // subtitle: 'Wisata Alam dan Edukasi',
+    // title: 'Pesona Alam',
+    // desc: 'Jelajahi keindahan alam sambil menambah wawasan wisata edukasi.',
   },
   {
     id: 2,
-    image: '/assets/img/banner2.jpg',
-    subtitle: 'Wisata Alam dan Edukasi',
-    title: 'Pesona Alam',
-    desc: 'Jelajahi keindahan alam sambil menambah wawasan wisata edukasi.',
-  },
-  {
-    id: 3,
     image: '/assets/img/banner3.jpg', 
-    subtitle: 'Suasana Desa Yang Menenangkan',
-    title: 'Jajar Gumregah',
-    desc: 'Nikmati Udara Segar dan Pemandangan Hijau yang Menyegarkan di Desa Jajar Gumregah.',
+    // subtitle: 'Suasana Desa Yang Menenangkan',
+    // title: 'Jajar Gumregah',
+    // desc: 'Nikmati Udara Segar dan Pemandangan Hijau yang Menyegarkan di Desa Jajar Gumregah.',
   },
 ]
 
 export default function HeroSection() {
+  const t = useTranslations('HeroSection')
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
@@ -72,7 +75,7 @@ export default function HeroSection() {
               transition={{ delay: 0.5 }}
               className="text-primary font-bold tracking-[0.2em] uppercase mb-4"
             >
-              {slides[index].subtitle}
+              {t(`slides.${index}.subtitle`)}
             </motion.p>
 
             {/* --- IMPLEMENTASI REACT BITS DISINI --- */}
@@ -87,7 +90,7 @@ export default function HeroSection() {
               color="#ffffff"
               shineColor="oklch(69.6% 0.17 162.48)"
               className="text-4xl md:text-8xl font-bold drop-shadow-2xl px-4 py-2" // Class Font size ada di sini
-              text={slides[index].title} // Pass the text prop instead of children
+              text={t(`slides.${index}.title`)} // Pass the text prop instead of children
             />
 
             </motion.div>
@@ -99,7 +102,7 @@ export default function HeroSection() {
               transition={{ delay: 0.9 }}
               className="text-gray-200 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed"
             >
-              {slides[index].desc}
+              {t(`slides.${index}.desc`)}
             </motion.p>
 
             <motion.div
@@ -108,7 +111,7 @@ export default function HeroSection() {
                transition={{ delay: 1.1 }}
             >
               <Button asChild size="lg" className="rounded-full px-8 py-6 text-lg bg-emerald-500 transition-all hover:scale-105">
-                <Link href="/#about">Jelajahi Desa</Link>
+                <Link href="#about">{t('button')}</Link>
               </Button>
             </motion.div>
           </div>

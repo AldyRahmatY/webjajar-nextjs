@@ -2,17 +2,19 @@
 import { useState } from 'react'
 import ScrollReveal from '@/components/ui/ScrollReveal'
 import { MapPin, Users, Home, Play } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 export default function AboutSection() {
   const [isPlaying, setIsPlaying] = useState(false)
+  const t = useTranslations('AboutSection')
   return (
     <section id="about" className="py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         
         {/* Modern Header */}
         <ScrollReveal className="text-center max-w-3xl mx-auto mb-16">
-          <h4 className="font-bold uppercase tracking-wider mb-2 text-emerald-500">Tentang Kami</h4>
-          <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-6">Mengenal Desa Jajar Lebih Dekat</h2>
+          <h4 className="font-bold uppercase tracking-wider mb-2 text-emerald-500">{t('section')}</h4>
+          <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-6">{t('title')}</h2>
           <div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
         </ScrollReveal>
     
@@ -21,12 +23,16 @@ export default function AboutSection() {
           
           {/* Box 1: Deskripsi Utama (Large) */}
           <ScrollReveal direction='left' className="md:col-span-2 bg-gray-50 p-8 rounded-3xl border border-gray-100 flex flex-col justify-center">
-            <h3 className="text-2xl font-bold mb-4 text-gray-700">Permata di Trenggalek</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-700">{t('header')}</h3>
             <p className="text-gray-500 leading-relaxed mb-6">
-                <span className="text-emerald-400 font-semibold">Desa Wisata Jajar</span> terletak di Kecamatan Gandusari, Kabupaten Trenggalek. Dikelilingi oleh hamparan perbukitan hijau dan persawahan yang asri, desa ini menjadi tempat yang ideal untuk wisatawan yang ingin merasakan ketenangan.
+                <span className="text-emerald-500 font-semibold">Desa Wisata Jajar</span> {t('paragraf1')}
+                {/* terletak di Kecamatan Gandusari, Kabupaten Trenggalek. Dikelilingi oleh hamparan perbukitan hijau dan persawahan yang asri, desa ini menjadi tempat yang ideal untuk wisatawan yang ingin merasakan ketenangan. */}
             </p>
             <p className="text-gray-600 leading-relaxed">
-                Di bawah naungan perbukitan hijau Trenggalek, <strong>"tradisi Tiban"</strong>  menghidupkan legenda pemanggil hujan melalui atraksi cambuk yang menggetarkan sukma. Jelajahi Desa Wisata Jajar, tempat di mana kemurnian alam dan keagungan budaya leluhur menyatu dalam sebuah pelarian yang tak terlupakan.
+              {t.rich('paragraf2', {
+                strong: (chunks) => <span className="text-emerald-500 font-extrabold">{chunks}</span>
+              })}
+                {/* Di bawah naungan perbukitan hijau Trenggalek, <strong>"tradisi Tiban"</strong>  menghidupkan legenda pemanggil hujan melalui atraksi cambuk yang menggetarkan sukma. Jelajahi Desa Wisata Jajar, tempat di mana kemurnian alam dan keagungan budaya leluhur menyatu dalam sebuah pelarian yang tak terlupakan. */}
             </p>
           </ScrollReveal>
 
@@ -65,8 +71,8 @@ export default function AboutSection() {
 
                 {/* Teks Info */}
                 <div className="absolute bottom-6 left-6 text-white pointer-events-none">
-                  <p className="font-bold text-lg drop-shadow-md">Profil Video</p>
-                  <p className="text-xs opacity-90 drop-shadow-md">Klik untuk memutar video</p>
+                  <p className="font-bold text-lg drop-shadow-md">{t('video_profile')}</p>
+                  <p className="text-xs opacity-90 drop-shadow-md">{t('click_to_play')}</p>
                 </div>
               </div>
             )}
@@ -74,10 +80,10 @@ export default function AboutSection() {
           </ScrollReveal>
 
           {/* Box 3, 4, 5, 6: Statistik (Kecil-kecil) */}
-          <StatCard delay={0.3} icon={<MapPin />} value="531 Ha" label="Luas Wilayah" />
-          <StatCard delay={0.4} icon={<Users />} value="2,971" label="Penduduk" />
-          <StatCard delay={0.5} icon={<Home />} value="3" label="Dusun" />
-          <StatCard delay={0.6} icon={<Home />} value="21" label="RT" />
+          <StatCard delay={0.3} icon={<MapPin />} value="531 Ha" label={t('luas')}/>
+          <StatCard delay={0.4} icon={<Users />} value="2,971" label={t('penduduk')} />
+          <StatCard delay={0.5} icon={<Home />} value="3" label={t('dusun')} />
+          <StatCard delay={0.6} icon={<Home />} value="21" label={t('rt')} />
 
           {/* Box 7: Maps (Wide) */}
           <ScrollReveal delay={0.4} className="md:col-span-4 h-64 rounded-3xl overflow-hidden shadow-md border border-gray-200 mt-4">

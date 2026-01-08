@@ -1,8 +1,11 @@
 import type { NextConfig } from "next";
+import createNextIntlPlugin from 'next-intl/plugin'; // 1. Import plugin ini
+
+const withNextIntl = createNextIntlPlugin('./i18n/request.ts'); // 2. Panggil dengan path ke request config Anda
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  reactCompiler: true,
+  /* config options here */  
+  reactCompiler: true, // (Ini bawaan config Anda)
   devIndicators: false,
   images: {
     remotePatterns: [
@@ -17,4 +20,5 @@ const nextConfig: NextConfig = {
   transpilePackages: ['reactflow'],
 };
 
-export default nextConfig;
+// 3. Bungkus export default dengan withNextIntl
+export default withNextIntl(nextConfig);

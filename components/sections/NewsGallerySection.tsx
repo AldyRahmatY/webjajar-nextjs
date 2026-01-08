@@ -1,84 +1,9 @@
-// import Link from 'next/link'
-// import Image from 'next/image'
-// import { Button } from '@/components/ui/button'
-// import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
-
-// // Dummy Data Berita
-// const newsData = [
-//   { id: 1, title: 'Kegiatan Bersih Desa', date: '20 Jan 2025', img: '/assets/user/img/berita/1.jpg', excerpt: 'Warga desa melakukan gotong royong...' },
-//   { id: 2, title: 'Panen Raya 2025', date: '18 Jan 2025', img: '/assets/user/img/berita/2.jpg', excerpt: 'Hasil panen tahun ini meningkat...' },
-//   // Tambahkan data dummy lainnya
-// ]
-
-// export default function NewsGallerySection() {
-//   return (
-//     <>
-//       {/* Berita Section */}
-//       <section id="berita" className="py-20 bg-white">
-//         <div className="container mx-auto px-4">
-//           <div className="text-center mb-12">
-//             <h2 className="text-3xl font-bold mb-4 text-gray-800">Berita Desa</h2>
-//             <p className="text-emerald-500">Perkembangan terkini seputar Desa Jajar.</p>
-//           </div>
-
-//           <div className="grid md:grid-cols-3 gap-8">
-//             {newsData.map((item) => (
-//               <Card key={item.id} className="border-none shadow-lg hover:-translate-y-2 transition-transform duration-300">
-//                 <div className="relative h-56 w-full overflow-hidden rounded-t-xl">
-//                   <Image 
-//                     src={item.img} 
-//                     alt={item.title} 
-//                     fill 
-//                     className="object-cover"
-//                   />
-//                 </div>
-//                 <CardHeader>
-//                   <p className="text-xs text-gray-400 mb-2">{item.date}</p>
-//                   <CardTitle className="text-lg line-clamp-2 hover:text-primary cursor-pointer">
-//                     <Link href={`/berita/${item.id}`}>{item.title}</Link>
-//                   </CardTitle>
-//                 </CardHeader>
-//                 <CardContent>
-//                   <p className="text-sm text-gray-600 line-clamp-3">{item.excerpt}</p>
-//                 </CardContent>
-//                 <CardFooter className="justify-center pb-6">
-//                   <Button variant="outline" size="sm" asChild>
-//                     <Link href={`/berita/${item.id}`}>Selengkapnya</Link>
-//                   </Button>
-//                 </CardFooter>
-//               </Card>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* Galeri Section (Simple Grid) */}
-//       {/* <section id="galeri" className="py-10 bg-black">
-//         <div className="container mx-auto px-4 mb-8 text-center text-white">
-//              <h2 className="text-3xl font-bold">Galeri Desa</h2>
-//         </div>
-//         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-0">
-//             {[1,2,3,4,5,6].map((i) => (
-//                 <div key={i} className="relative h-48 md:h-64 group overflow-hidden">
-//                     <Image 
-//                         src={`/assets/user/img/galeri/${i}.jpg`} 
-//                         alt="Galeri" 
-//                         fill
-//                         className="object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
-//                     />
-//                 </div>
-//             ))}
-//         </div>
-//       </section> */}
-//     </>
-//   )
-// }
-
 import Link from 'next/link'
 import Image from 'next/image'
 import Parser from 'rss-parser'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { getTranslations } from 'next-intl/server';
 
 const parser = new Parser();
 
@@ -143,6 +68,7 @@ async function getLiveNews() {
 
 export default async function NewsGallerySection() {
   const newsData = await getLiveNews();
+  const t = await getTranslations('NewsSection');
 
   if (newsData.length === 0) return null;
 
@@ -150,8 +76,8 @@ export default async function NewsGallerySection() {
     <section id="berita" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4 text-gray-800">Berita Desa</h2>
-          <p className="text-emerald-500">Perkembangan terkini seputar Desa Jajar.</p>
+          <h2 className="text-3xl font-bold mb-4 text-gray-800">{t('title')}</h2>
+          <p className="text-emerald-500">{t('subtitle')}</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
