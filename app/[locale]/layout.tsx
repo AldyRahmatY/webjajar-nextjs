@@ -38,6 +38,7 @@ export default async function RootLayout({
             {children}
           </main>
           <Footer />
+          <VisitorTracker />
         </NextIntlClientProvider>
       </body>
     </html>
